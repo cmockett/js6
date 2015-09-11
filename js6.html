@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>JS6</title>
+	<link rel="stylesheet" type="text/css" href="js6.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+</head>
+<body ng-controller="appController">
+	<div><button ng-click="showFormClick()"><p>Show Form!</p></button></div>
+	<div class="formDiv" ng-show="showFormDiv">
+		<div><form><input type="text"><input type="submit"></form></div>
+		<div><form><input type="text"><input type="submit"></form></div>
+		<div><form><input type="text"><input type="submit"></form></div>
+		<div><form><input type="text"><input type="submit"></form></div>
+	</div>
+	<h1>{{name}}</h1>
+	<p>{{bio}}</p>
+	
+	<ul>
+		<li>{{books}}</li>
+	</ul>
+	<ul>
+		<li>{{javaLib}}</li>
+	</ul>
+	<script language="javascript" type="text/javascript" src="js6.js"></script>
+</body>
+</html>
